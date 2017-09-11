@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/milligram.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <title>Static Site</title>
+    <title>Kat Reinhart | Full Stack Developer</title>
   </head>
   <body>
     <nav>
@@ -13,14 +16,14 @@
         K Reinhart
       </div>
       <div class="collapse nav-collapse">
-        <button class="toggle-button" name="button">	&#9776;</button>
+        <!-- <button class="toggle-button" id="nav-toggle">	&#9776;</button> -->
       </div>
       <div class="nav-container">
         <ul class="main-nav">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Frameworks</a></li>
-          <li><a href="#">Languages</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#frameworks">Frameworks</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -28,8 +31,26 @@
       <h1>Full Stack Developer</h1>
     </div>
 
-    <section class="projects">
+    <section id="projects">
       <h3 class="section-title">Projects</h3>
+      <div class="card">
+        <div class="card-image">
+          <img src="./img/place-img.jpg" width="320px" height="240px"alt="A placeholder image of a beard">
+          <h4 class="card-title">Sea Bass Salmon</h4>
+        </div>
+        <div class="card-body">
+          <p>Climbing catfish scaleless black dragonfish mudsucker ropefish moray eel mud cat, loweye catfish. Flying characin sea snail píntano flathead catfish yellowtail kingfish mola mola sunfish.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="./img/place-img.jpg" width="320px" height="240px"alt="A placeholder image of a beard">
+          <h4 class="card-title">Sea Bass Salmon</h4>
+        </div>
+        <div class="card-body">
+          <p>Climbing catfish scaleless black dragonfish mudsucker ropefish moray eel mud cat, loweye catfish. Flying characin sea snail píntano flathead catfish yellowtail kingfish mola mola sunfish.</p>
+        </div>
+      </div>
       <div class="card">
         <div class="card-image">
           <img src="./img/place-img.jpg" width="320px" height="240px"alt="A placeholder image of a beard">
@@ -49,7 +70,7 @@
         </div>
       </div>
     </section>
-    <section class="frameworks">
+    <section id="frameworks">
       <h3 class="section-title">Frameworks</h3>
       <div class="card">
         <div class="card-image">
@@ -68,7 +89,7 @@
         </div>
       </div>
     </section>
-    <section class="languages">
+    <section id="languages">
       <h3 class="section-title">Languages</h3>
       <div class="card">
         <div class="card-image">
@@ -87,28 +108,34 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact">
       <h3 class="section-title">Contact</h3>
-      <div class="card">
-        <div class="card-image">
-          <img src="./img/place-img.jpg" width="320px" height="240px"alt="A placeholder image of a beard">
-        </div>
-        <div class="card-body">
-          <p>Climbing catfish scaleless black dragonfish mudsucker ropefish moray eel mud cat, loweye catfish. Flying characin sea snail píntano flathead catfish yellowtail kingfish mola mola sunfish.</p>
-        </div>
+      <div class="find-me">
+        <a href="#"><i class="fa fa-4x fa-github"></i> Github</a>
       </div>
-      <div class="card">
-        <div class="card-image">
-          <img src="./img/place-img.jpg" width="320px" height="240px"alt="A placeholder image of a beard">
-        </div>
-        <div class="card-body">
-          <p>Climbing catfish scaleless black dragonfish mudsucker ropefish moray eel mud cat, loweye catfish. Flying characin sea snail píntano flathead catfish yellowtail kingfish mola mola sunfish.</p>
-        </div>
+      <div class="find-me">
+        <a href="#"><i class="fa fa-4x fa-code"></i> Portfolio</a>
       </div>
+      <div class="find-me">
+        <a href="#"><i class="fa fa-4x fa-linkedin"></i> LinkedIn</a>
+      </div>
+      <div class="contact-greeting">
+        <p>Questions? Projects? Leave me a note and I'll be in touch soon!</p>
+      </div>
+      <div class="contact-form">
+        <form class="contact" >
+          <textarea name="name" rows="8" cols="80" placeholder="Message..."></textarea>
+          <input type="email" name="email" value="" placeholder="Your Email">
+          <input type="text" name="name" value="" placeholder="Your Name">
+          <br>
+          <button class="button-span" type="submit" name="submit">Submit</button>
+        </form>
+      </div>
+
     </section>
     <footer>
       Copyright (c) 2017 katreinhart.com All Rights Reserved.
     </footer>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>

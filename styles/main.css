@@ -13,6 +13,7 @@ html {
   font-size: 16px;
   background-image: url('../img/ep_naturalwhite.png');
   background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 nav {
@@ -25,7 +26,12 @@ nav {
   width: 100%;
 }
 
-nav a {
+a, a:visited {
+  color: #11182F;
+  text-decoration: none;
+}
+
+nav a, nav a:visited {
   color: #EEE3D0;
   font-weight: 300;
   font-size: 1rem;
@@ -43,22 +49,12 @@ h1 {
 
 }
 
-h3 {
-  color: #EEE3D0;
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: rgba(182,56,17, 0.8);
-  border-bottom: 1px solid #11182F;
-  border-top: 1px solid #11182F;
-}
-
 .brand {
   font-family: 'Audiowide', sans-serif;
   font-size: 2.2rem;
   font-weight: bold;
   color: #83A97C;
+  text-align: center;
 }
 
 .toggle-button {
@@ -93,6 +89,7 @@ h3 {
 .card {
   background-color: #EEE3D0;
   border: 1px solid #B63811;
+  border-radius: 6px;
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -119,6 +116,60 @@ h3 {
   color: #EEE3D0;
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+.section-title {
+  color: #EEE3D0;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(182,56,17, 0.8);
+  border-bottom: 1px solid #11182F;
+  border-top: 1px solid #11182F;
+}
+
+.find-me {
+  width: 80%;
+  float: left;
+  margin: 5px 10%;
+  padding: 5px;
+  border: 2px solid #83A97C;
+  border-radius: 5px;
+  background-color: #EEE3D0;
+}
+
+.contact-greeting {
+  margin: 0 auto;
+  width: 80%;
+  padding: 50px 0 0 15px;
+}
+
+.contact-greeting p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #11182F;
+}
+
+.contact-form {
+  width: 90%;
+  justify-content: center;
+  margin: 20px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.contact-form input {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.contact-form button {
+  width: 100%;
 }
 
 footer {
@@ -162,8 +213,6 @@ footer {
 
   .hero h1 {
     font-size: 2rem;
-    position: absolute;
-    top: 50%;
   }
 }
 
@@ -185,6 +234,22 @@ footer {
   }
   h3 {
     clear: both;
+  }
+
+  .find-me {
+    width: 27%;
+    align-items: space-around;
+    margin: 0 auto;
+    margin-top: 10px;
+    /*flex-direction: row;*/
+  }
+
+  .contact-form {
+    /*width: 60%;*/
+    flex: 2
+  }
+  .contact-greeting {
+    /*flex: 1*/
   }
   footer {
     clear: both;
