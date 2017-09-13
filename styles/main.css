@@ -241,6 +241,10 @@ footer {
     margin-right: 20px;
   }
 
+  .hero {
+    background-size: cover;
+  }
+
   ul.project-list {
     display: grid;
     grid-template-rows: auto auto;
