@@ -16,7 +16,7 @@ html {
     rgba(17,24,47, 0.1)),
     url('../img/ep_naturalwhite.png');
   background-repeat: repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed; this doesn't work great on ios */
 }
 
 nav {
@@ -46,14 +46,13 @@ nav a:active, nav a:hover {
 
 h1 {
   font-size: 1.6rem;
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Inconsolata', sans-serif;
   color: #F4D24C;
   padding: 12px;
-
 }
 
 .brand {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Inconsolata', sans-serif;
   font-size: 2.2rem;
   font-weight: bold;
   color: #83A97C;
@@ -73,10 +72,14 @@ h1 {
 }
 
 .hero {
-  background:
-    url('../img/bg.jpg');
-  background-size: contain;
-  background-attachment: fixed;
+  background: -webkit-linear-gradient(rgba(17,24,47, 0.9), rgba(17,24,47, 0.1)),
+        url('../img/bg.jpg');
+  background: -o-linear-gradient(rgba(17,24,47, 0.9), rgba(17,24,47, 0.1)),
+        url('../img/bg.jpg');
+  background: linear-gradient(rgba(17,24,47, 0.9), rgba(17,24,47, 0.1)),
+        url('../img/bg.jpg');
+  background-size: cover;
+  /*background-attachment: fixed;*/
   background-position: top;
   background-repeat: no-repeat;
   min-height: 50vw;
@@ -86,7 +89,7 @@ h1 {
 .hero h1 {
   position: absolute;
   top: 60px;
-  left: 0;
+  left: 20px;
 }
 
 ul {
@@ -104,6 +107,7 @@ ul .card {
   margin-bottom: 20px;
   padding: 0;
   max-width: 360px;
+  height: 400px;
 }
 
 .card-image {
@@ -133,7 +137,7 @@ ul .card {
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgba(131,169,124, 0.3);
+  background-color: rgba(182,56,17, 0.9);
   border-bottom: 1px solid #11182F;
   border-top: 1px solid #11182F;
 }
@@ -199,10 +203,13 @@ footer {
 }
 
 @media (min-width: 720px) {
+  .hero {
+    background-attachment: fixed;
+  }
   .brand {
     float: left;
     padding-top: 10px;
-    padding-right: 5px;
+    padding-right: 25px;
   }
   .toggle-button {
     display: none;
@@ -231,11 +238,14 @@ footer {
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (min-width: 812px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
   nav a {
     font-weight: 400;
     margin-right: 20px;
