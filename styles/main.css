@@ -16,13 +16,13 @@ html {
     rgba(17,24,47, 0.1)),
     url('../img/ep_naturalwhite.png');
   background-repeat: repeat;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
 }
 
 nav {
   background-color: #11182F;
   color: #EEE3D0;
-  height: 35px;
+  height: 50px;
   padding: 10px;
   position: fixed;
   z-index: 1000;
@@ -73,30 +73,36 @@ h1 {
 }
 
 .hero {
-  background: linear-gradient(
-    rgba(17,24,47,0.4),
-    rgba(17,24,47,0.8)),
-    url('../img/hero.jpg');
-  background-size: 130%;
+  background:
+    url('../img/bg.jpg');
+  background-size: contain;
   background-attachment: fixed;
-  min-height: 250px;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 50vw;
   position: relative;
 }
 
 .hero h1 {
   position: absolute;
-  bottom: 0;
+  top: 60px;
   left: 0;
 }
 
-.card {
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul .card {
+  list-style: none;
   background-color: #EEE3D0;
-  border: 1px solid #B63811;
-  border-radius: 6px;
+  border: 1px solid #11182F;
+  border-radius: 3px;
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 0;
   max-width: 360px;
 }
 
@@ -124,9 +130,10 @@ h1 {
   color: #EEE3D0;
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgba(182,56,17, 0.8);
+  background-color: rgba(131,169,124, 0.3);
   border-bottom: 1px solid #11182F;
   border-top: 1px solid #11182F;
 }
@@ -191,9 +198,11 @@ footer {
   border-bottom: 1px solid #11182F;
 }
 
-@media (min-width: 687px) {
+@media (min-width: 720px) {
   .brand {
     float: left;
+    padding-top: 10px;
+    padding-right: 5px;
   }
   .toggle-button {
     display: none;
@@ -201,7 +210,7 @@ footer {
   .main-nav {
     display: inline;
     float: right;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-right: 20px;
     font-size: 1.1rem;
   }
@@ -226,24 +235,23 @@ footer {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 812px) {
   nav a {
     font-weight: 400;
     margin-right: 20px;
   }
-  section {
-    display: flex;
-    flex-wrap: wrap;
+
+  ul.project-list {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
   }
-  section .section-title {
-    width: 100%;
-  }
-  .card {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  h3 {
-    clear: both;
+
+  ul .card {
+    max-width: 420px;
+    margin: 10px;
   }
 
   .find-me {
