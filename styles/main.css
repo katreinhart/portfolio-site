@@ -11,9 +11,12 @@ html {
   font-family: 'Open Sans', 'San Francisco', Helvetica, sans-serif;
   box-sizing: border-box;
   font-size: 16px;
-  background-image: url('../img/ep_naturalwhite.png');
+  background: linear-gradient(
+    rgba(17,24,47, 0.9),
+    rgba(17,24,47, 0.1)),
+    url('../img/ep_naturalwhite.png');
   background-repeat: repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
 
 nav {
@@ -100,7 +103,6 @@ h1 {
 .card-image {
   text-align: center;
   padding-top: 15px;
-
 }
 
 .card-body {
@@ -127,6 +129,14 @@ h1 {
   background-color: rgba(182,56,17, 0.8);
   border-bottom: 1px solid #11182F;
   border-top: 1px solid #11182F;
+}
+
+.projects {
+  display: flex;
+}
+
+.projects .card {
+  flex-direction: row;
 }
 
 .find-me {
@@ -241,18 +251,23 @@ footer {
     align-items: space-around;
     margin: 0 auto;
     margin-top: 10px;
-    /*flex-direction: row;*/
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .contact-form {
-    /*width: 60%;*/
+    width: 60%;
     flex: 2
   }
   .contact-greeting {
-    /*flex: 1*/
+    flex: 1
   }
   footer {
     clear: both;
   }
 
+}
+
+section.projects, .frameworks, .languages {
+  display: none;
 }
