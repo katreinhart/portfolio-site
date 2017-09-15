@@ -134,6 +134,10 @@ ul .card {
   font-weight: 300;
 }
 
+.card.game {
+  
+}
+
 .section-title {
   color: #FFF9F9;
   font-size: 1.5rem;
