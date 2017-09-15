@@ -42,8 +42,8 @@ nav a, nav a:visited {
 }
 
 nav a:active, nav a:hover {
-  color: #368C5E;
-  font-weight: bold;
+  color: #6B8E94;
+  font-weight: 400;
 }
 
 h1 {
@@ -129,9 +129,9 @@ ul .card {
   max-width: 320px;
   margin: 0 auto;
   margin-top: 10px;
-  color: #368C5E;
+  color: #6B8E94;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .card.game {
@@ -145,7 +145,7 @@ ul .card {
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgba(54,140,94,0.8);
+  background-color: rgba(107,142,148,0.8);
   border-bottom: 1px solid #11182F;
   /*border-top: 1px solid #11182F;*/
 }
@@ -213,11 +213,6 @@ footer {
 
 footer .image {
   display: inline-block;
-  /*width: 300px;*/
-  height: auto;
-}
-
-footer .image {
   width: 100vw;
   height: 100vw;
 }
@@ -231,9 +226,14 @@ footer .image.hidden-small {
   display: none;
 }
 
-@media (min-width: 555px) {
+.footer-content p {
+  margin: 0;
+  padding: 20px;
+}
+
+@media screen and (min-width: 555px) {
   footer .image {
-    width: 49vw;
+    width: 50vw;
     height: 50vw;
   }
   footer .image img {
@@ -249,7 +249,7 @@ footer .image.hidden-small {
   }
 }
 
-@media (min-width: 720px) {
+@media screen and (min-width: 720px) {
   .hero {
     background-attachment: fixed;
   }
@@ -289,7 +289,7 @@ footer .image.hidden-small {
   }
 }
 
-@media (min-width: 812px) {
+@media screen and (min-width: 812px) {
   .hero h1 {
     font-size: 3rem;
   }
@@ -338,12 +338,14 @@ footer .image.hidden-small {
     clear: both;
     padding-top: 10px
   }
+
   footer {
     clear: both;
   }
 
   footer .image {
-    width: 19.5vw;
+    box-sizing: border-box;
+    width: 19.7vw;
     height: 20vw;
   }
   footer .image img {
@@ -357,6 +359,8 @@ footer .image.hidden-small {
   footer .image.hidden-md {
     display: inline-block;
   }
+
+
 }
 
 section.projects, .frameworks, .languages {
