@@ -2,8 +2,8 @@
  #11182F;  rgb(17,24,47)
  #F4D24C;  rgb(244,210,76)
  #6B8E94;  rgb(107,142,148)
- #EEE3D0;  rgb(238,227,208)
- #83A97C;  rgb(131,169,124)
+ #FFF9F9;  rgb(255,249,249)
+ #368C5E;  rgb(54,140,94)
  #B63811;  rgb(182,56,17)
 */
 
@@ -20,8 +20,8 @@ html {
 }
 
 nav {
-  background-color: #11182F;
-  color: #EEE3D0;
+  background: linear-gradient(rgba(255,249,249,1), rgba(255,249,249,0.8));
+  color: #11182F;
   height: 50px;
   padding: 10px;
   position: fixed;
@@ -36,19 +36,20 @@ a, a:visited {
 }
 
 nav a, nav a:visited {
-  color: #EEE3D0;
+  color: #11182F;
   font-weight: 300;
   font-size: 1rem;
 }
 
 nav a:active, nav a:hover {
-  color: #F4D24C;
+  color: #368C5E;
+  font-weight: bold;
 }
 
 h1 {
   font-size: 1.6rem;
   font-family: 'Coda', sans-serif;
-  color: #F4D24C;
+  color: #11182F;
   padding: 12px;
 }
 
@@ -56,7 +57,8 @@ h1 {
   font-family: 'Coda', sans-serif;
   font-size: 2.2rem;
   font-weight: bold;
-  color: #83A97C;
+  margin-left: 25px;
+  color: #11182F;
   text-align: center;
 }
 
@@ -73,11 +75,11 @@ h1 {
 }
 
 .hero {
-  background: -webkit-linear-gradient(rgba(17,24,47, 0.9), rgba(17,24,47, 0.1)),
+  background: -webkit-linear-gradient(rgba(255,249,249,1), rgba(255,249,249,0.2)),
         url('../img/bg.jpg');
-  background: -o-linear-gradient(rgba(17,24,47, 0.9), rgba(17,24,47, 0.1)),
+  background: -o-linear-gradient(rgba(255,249,249,1), rgba(255,249,249,0.2)),
         url('../img/bg.jpg');
-  background: linear-gradient(rgba(17,24,47, 0.9), rgba(17,24,47, 0.1)),
+  background: linear-gradient(rgba(255,249,249,1), rgba(255,249,249,0.2)),
         url('../img/bg.jpg');
   background-size: cover;
   /*background-attachment: fixed;*/
@@ -85,6 +87,7 @@ h1 {
   background-repeat: no-repeat;
   min-height: 50vw;
   position: relative;
+  padding-top: 45px;
 }
 
 .hero h1 {
@@ -100,7 +103,7 @@ ul {
 
 ul .card {
   list-style: none;
-  background-color: #EEE3D0;
+  background-color: #FFF9F9;
   border: 1px solid #11182F;
   border-radius: 3px;
   margin: 0 auto;
@@ -108,7 +111,7 @@ ul .card {
   margin-bottom: 20px;
   padding: 0;
   max-width: 360px;
-  height: 400px;
+  height: 440px;
 }
 
 .card-image {
@@ -125,20 +128,20 @@ ul .card {
 .card-title {
   max-width: 320px;
   margin: 0 auto;
-  margin-top: -30px;
-  color: #EEE3D0;
+  margin-top: 10px;
+  color: #368C5E;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
 .section-title {
-  color: #EEE3D0;
+  color: #FFF9F9;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgba(182,56,17, 0.9);
+  background-color: rgba(54,140,94,0.8);
   border-bottom: 1px solid #11182F;
   border-top: 1px solid #11182F;
 }
@@ -156,9 +159,9 @@ ul .card {
   float: left;
   margin: 5px 10%;
   padding: 5px;
-  border: 2px solid #83A97C;
+  border: 2px solid #368C5E;
   border-radius: 5px;
-  background-color: #EEE3D0;
+  background-color: #FFF9F9;
 }
 
 .contact-greeting {
@@ -196,7 +199,7 @@ ul .card {
 
 footer {
   background-color: #6B8E94;
-  color: #EEE3D0;
+  color: #FFF9F9;
   padding: 10px;
   font-size: 0.8rem;
   border-top: 1px solid #11182F;
